@@ -1,0 +1,25 @@
+doctype
+html
+  head
+    title Heater Controller
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css")
+    link(rel='stylesheet', href="/css/interface.css")
+    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(src="/js/interface.js")
+  body
+    .container
+      h1 Heater Controller
+      .row.voffset
+        .col-md-3
+          div Set Temperature
+        .col-md-3
+          input(type='text', id='target')
+        .col-md-3
+          button.btn.btn-block.btn-lg.btn-primary#set Set
+      .row.voffset
+        .col-md-4
+          div#temperature Current temperature:
+        .col-md-4
+          div#targetIndicator Target temperature:
+        .col-md-4
+          div#heater Heater OFF
